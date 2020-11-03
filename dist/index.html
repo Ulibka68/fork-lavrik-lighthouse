@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +7,41 @@
    <meta name="description" content="Документация библиотеки smart-grid. Код и примеры использования примеси debug.">
    <title>Smart Grid - описание примеси debug</title>
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="css/critical.css">
+   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
    <div id="app">
       <div class="box__2ed1142"></div>
-      <header class="header__909a987 bg-primary">
+      <header class="header bg-primary">
          <div class="sg-wrapper">
-            <div class="sg-row-flex headerRow__9d8c72e"><a class="headerCol__edd9beb logo__ae0a672" href="/">
-                  <div class="title__a9a6a83">smart-grid</div>
+            <div class="sg-row-flex headerRow"><a class="headerCol logo" href="/">
+                  <div class="title">smart-grid</div>
                   <div>препроцессорная сетка для web</div>
                </a>
-               <div class="headerCol__edd9beb menu__4b95d45">
-                  <ul class="tab list__07ad5d3 menuList__72c0c65">
-                     <li class="item__7b82f97 tab-item"><a href="/basics">Начало работы</a></li>
-                     <li class="item__7b82f97 tab-item"><a href="/options">Настройки сетки</a></li>
-                     <li class="item__7b82f97 tab-item active"><a href="/mixins">Примеси</a></li>
+               <div class="headerCol menu-header">
+                  <ul class="tab list-in-tab menu-header-list">
+                     <li class="menu-header-item tab-item"><a href="/basics">Начало работы</a></li>
+                     <li class="menu-header-item tab-item"><a href="/options">Настройки сетки</a></li>
+                     <li class="menu-header-item tab-item active"><a href="/mixins">Примеси</a></li>
                   </ul>
                </div>
             </div>
          </div>
       </header>
-      <div class="content__3c3d445">
+      <div class="content-wrapper">
          <div class="sg-wrapper">
             <div class="sg-row-flex">
-               <aside class="layout__de2af1f">
-                  <nav class="nav__18ba104" tabindex="0"><span class="btn toggle__2ea084e">Список примесей</span>
-                     <ul class="nav menu menu__4aa401e">
-                        <li class="divider divider__41e907a" data-content="Типы примесей"></li>
+               <aside class="layout-aside">
+                  <nav class="nav-aside" tabindex="0"><span class="btn btn-toggle">Список примесей</span>
+                     <ul class="nav menu menu-aside">
+                        <li class="divider divider-in-menu" data-content="Типы примесей"></li>
                         <li class="nav-item"><a href="/mixins/wireframe">Каркасные</a></li>
                         <li class="nav-item"><a href="/mixins/rows">Строки</a></li>
                         <li class="nav-item"><a href="/mixins/columns">Столбцы</a></li>
                         <li class="nav-item"><a href="/mixins/shifts">Отступы</a></li>
                         <li class="nav-item"><a href="/mixins/adaptive">Для breakPoints</a></li>
                         <li class="nav-item active"><a href="/mixins/helpers">Вспомогательные</a>
-                           <ul class="nav menu submenu__f4b7014">
+                           <ul class="nav menu submenu-left">
                               <li class="nav-item"><a href="/mixins/helpers/reset">reset</a></li>
                               <li class="nav-item active"><a href="/mixins/helpers/debug">debug</a></li>
                               <li class="nav-item"><a href="/mixins/helpers/from">from</a></li>
@@ -55,7 +53,7 @@
                      </ul>
                   </nav>
                </aside>
-               <main class="layout__279f2f6">
+               <main class="layout-content">
                   <ul class="breadcrumb">
                      <li class="breadcrumb-item"><a href="/mixins">Примеси</a></li>
                      <li class="breadcrumb-item"><a href="/mixins/helpers">Вспомогательные</a></li>
@@ -67,13 +65,13 @@
                      <p><strong>Код примеси:</strong></p>
                      <div>
                         <div class="tab">
-                           <div class="tab-item active"><a href="#" class="link__cfb214c">LESS</a></div>
-                           <div class="tab-item"><a href="#" class="link__cfb214c">SCSS</a></div>
-                           <div class="tab-item"><a href="#" class="link__cfb214c">Sass</a></div>
-                           <div class="tab-item"><a href="#" class="link__cfb214c">Stylus</a></div>
+                           <div class="tab-item active"><a href="#" class="link-in-tab">LESS</a></div>
+                           <div class="tab-item"><a href="#" class="link-in-tab">SCSS</a></div>
+                           <div class="tab-item"><a href="#" class="link-in-tab">Sass</a></div>
+                           <div class="tab-item"><a href="#" class="link-in-tab">Stylus</a></div>
                         </div>
                         <div>
-                           <div class="tabItem__7c987f7 tabItemActive__1e88241">
+                           <div class="tabItem tabItem-active">
                               <pre class="less code hljs" data-lang="less"><code>
 <span class="hljs-selector-class">.debug</span>(<span class="hljs-variable">@background</span>, <span class="hljs-variable">@outline</span>){
    <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
@@ -99,7 +97,7 @@
    }
 }</code></pre>
                            </div>
-                           <div class="tabItem__7c987f7">
+                           <div class="tabItem">
                               <pre class="scss code hljs" data-lang="scss"><code>
 @<span class="hljs-keyword">mixin</span> debug(<span class="hljs-variable">$background</span>, <span class="hljs-variable">$outline</span>){
    <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
@@ -125,7 +123,7 @@
    }
 }</code></pre>
                            </div>
-                           <div class="tabItem__7c987f7">
+                           <div class="tabItem">
                               <pre class="sass code hljs" data-lang="sass"><code>
 =debug(<span class="hljs-variable">$background</span>, <span class="hljs-variable">$outline</span>)
    <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>
@@ -151,7 +149,7 @@
    
 </code></pre>
                            </div>
-                           <div class="tabItem__7c987f7">
+                           <div class="tabItem">
                               <pre class="stylus code hljs" data-lang="stylus"><code>
 <span class="hljs-function"><span class="hljs-title">debug</span><span class="hljs-params">(<span class="hljs-variable">$background</span>, <span class="hljs-variable">$outline</span>)</span></span>
    <span class="hljs-attribute">height</span> <span class="hljs-number">100vh</span>
@@ -200,31 +198,31 @@
                      <p>Далее применяем примесь debug к внешнему div, например:</p>
                      <div>
                         <div class="tab">
-                           <div class="tab-item active"><a href="#" class="link__cfb214c">LESS</a></div>
-                           <div class="tab-item"><a href="#" class="link__cfb214c">SCSS</a></div>
-                           <div class="tab-item"><a href="#" class="link__cfb214c">Sass</a></div>
-                           <div class="tab-item"><a href="#" class="link__cfb214c">Stylus</a></div>
+                           <div class="tab-item active"><a href="#" class="link-in-tab">LESS</a></div>
+                           <div class="tab-item"><a href="#" class="link-in-tab">SCSS</a></div>
+                           <div class="tab-item"><a href="#" class="link-in-tab">Sass</a></div>
+                           <div class="tab-item"><a href="#" class="link-in-tab">Stylus</a></div>
                         </div>
                         <div>
-                           <div class="tabItem__7c987f7 tabItemActive__1e88241">
+                           <div class="tabItem tabItem-active">
                               <pre class="less code hljs" data-lang="less"><code>
 <span class="hljs-selector-class">.degub-grid</span>{
    <span class="hljs-selector-class">.debug</span>(rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>), <span class="hljs-number">1px</span> solid <span class="hljs-number">#ff0</span>);
 }</code></pre>
                            </div>
-                           <div class="tabItem__7c987f7">
+                           <div class="tabItem">
                               <pre class="scss code hljs" data-lang="scss"><code>
 <span class="hljs-selector-class">.degub-grid</span>{
    @<span class="hljs-keyword">include</span> debug(rgba(<span class="hljs-number">0</span>, 0, 0, 0.5), 1px solid <span class="hljs-number">#ff0</span>);
 }</code></pre>
                            </div>
-                           <div class="tabItem__7c987f7">
+                           <div class="tabItem">
                               <pre class="sass code hljs" data-lang="sass"><code>
 <span class="hljs-selector-class">.degub-grid</span>
    +debug(rgba(0, 0, 0, 0<span class="hljs-selector-class">.5</span>), 1px solid <span class="hljs-selector-id">#ff0</span>)
 </code></pre>
                            </div>
-                           <div class="tabItem__7c987f7">
+                           <div class="tabItem">
                               <pre class="stylus code hljs" data-lang="stylus"><code>
 <span class="hljs-selector-class">.degub-grid</span>
    debug(rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>), <span class="hljs-number">1px</span> solid <span class="hljs-number">#ff0</span>)
@@ -237,20 +235,10 @@
             </div>
          </div>
       </div>
-      <footer class="footer__0b1d532 bg-primary">
+      <footer class="footer bg-primary">
          <div class="sg-wrapper">Smart Grid For Web Sites © Dmitrii Lavrik</div>
       </footer>
    </div>
-   <script>
-      function loadStyle(url) {
-         let link = document.createElement('link');
-         link.href = url;
-         link.rel = 'stylesheet';
-         document.body.appendChild(link);
-      }
-      
-      loadStyle('css/async.css');
-   </script>
+   <!--asyncCss-->
 </body>
-
 </html>
