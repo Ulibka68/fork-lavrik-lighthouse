@@ -11,6 +11,11 @@
 	margin-right: -15px;
 }
 
+.sg-col {
+	box-sizing: border-box;
+	margin: 15px;
+}
+
 #app, .sg-row-flex {
   display: flex;
 }
