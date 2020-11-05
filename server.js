@@ -49,5 +49,7 @@ app.use('*', function(req, res){
 	}
 });
 
-console.log('server started')
+console.log('server started , port 3000');
+console.log('http://localhost:3000/?nocrit');
+console.log('http://localhost:3000/');
 app.listen(3000);
